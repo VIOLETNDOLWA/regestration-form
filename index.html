@@ -1,0 +1,118 @@
+ 
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>form</title>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+      <script>
+        function showCommentForm(){
+          var data ="UserName:<input type='text' name='name'placeholder='leila'>";
+          document.getElementById("myname").innerHTML = data;
+        }
+      </script>
+    </head>
+  <body>
+    <div class="container-fluid">
+      <h2>regestration form </h2>
+    <div class="group">
+      <div class="form">
+   <div class="form-group row">
+    <form >
+      <label for="inputUsername" class="col-sm-2 col-form-label">UserName:<input type="text" id="User_Name"value=""></label>
+      <span id="message"></span>
+       </div>
+
+       <div class="form-group row">
+        <label for="inputEmail" class="col-sm-2 col-form-label">E-mail:<input type="email" id="E-mail"value=""></label>
+      
+           </div>
+
+           <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password:<input type="password" id="Password"value=""></label>
+            
+               </div>
+
+      <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Age</label>
+      <div class="col-sm-10">
+        <select>
+          <option>10</option>
+          <option>20</option>
+          <option>40</option>
+          <option>60</option>
+         
+        </select>
+      </div>
+    </div>
+
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox1" value="option1" checked>
+          <label class="form-check-label" for="checkbox1">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox2" value="option2">
+          <label class="form-check-label" for="checkbox2">
+            Female
+          </label>
+        </div>
+        
+        
+      </div>
+    </div>
+  <br>
+
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Continets</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Africa
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+            <label class="form-check-label" for="gridRadios2">
+              Australia
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+            <label class="form-check-label" for="gridRadios3">
+              Europe
+            </label>
+          </div>
+          
+        </div>
+      </div>
+
+      
+    <br>
+    
+    <textarea rows="4" cols="50" name="comment" form="usrform">
+      Write your message </textarea>
+       <br><br>
+      <div class="form-check">
+      <input type="button" class="text-primary" value="submit" onclick="showCommentForm()">
+      <div id="myname"></div>
+      </div>
+        </div>
+      </div>
+    </form>
+  </body>
+  </html>
+  
