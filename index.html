@@ -20,21 +20,13 @@
         document.getElementById("myEmail").value = "Leila@gmail.com";
       }
 
-      function myFunction3() {
-        document.getElementById("checkedbox2").checked;
+      function check() {
+        document.getElementById("myCheck").checked = true;
       }
-      function selectFemale(){
-				var items=document.getElementsByName('acs');
-				for(var i=0; i<items.length; i++){
-					if(items[i].type=='checkbox')
-						items[i].checked=true;
-				}
-			}
 
-    </script>
-
-    </head>
-  <body>
+     </script>
+    <body>
+    <body>
     <div class="container-fluid">
       <h2 class="text-capitalize">regestration form </h2>
     <div class="group">
@@ -73,24 +65,24 @@
       <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
       <div class="col-sm-10">
         <div class="form-check">
-          
-          <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox1" value="unchecked" >
+
+           <input class="form-check-input" type="checkbox" name="checkbox" id="checkboxID" >
           <label class="form-check-label" for="checkbox1">
             Male
-          </label>
-        </div>
+          </label> 
+        </div> 
+       
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox2" value=" checked" >
+          <input class="form-check-input" type="checkbox" name="checkbox" id="myCheck" >
           <label class="form-check-label" for="checkbox2">
             Female
-          </label>
+          </label> 
         </div>
         
         
       </div>
     </div>
-  <br>
-
+    <br>
     <fieldset class="form-group">
       <div class="row">
         <legend class="col-form-label col-sm-2 pt-0">Continets</legend>
@@ -124,11 +116,12 @@
       Write your message </textarea>
        <br><br>
 
+  
+
+      <button onclick="check(),myFunction(),myFunction2()">Click here</button>
+  
       
 
-       <button onclick="myFunction(),myFunction2(), myFunction3(),selectFemale()" >show name</button>
-
-       </div>
     </form>
  </body>
   </html>
