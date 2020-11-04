@@ -35,24 +35,43 @@
     }
     function age(){
       document.getElementById("mySelect").value=20;
+    } 
+    
+     function writeText (form) {
+        form.inputbox.value = "leila@gmail.com"
     }
-
-     </script>
-
   
-  
-    <body>
+    function WriteText (form1) {
+        form.inputbox.value = "Leila"
+    }
+ </script>
+ <body>
+
+ 
     <div class="container-fluid">
       <h2 class="text-capitalize">regestration form </h2>
     <div class="group">
-      <div class="form">
+      
       <div class="form-group row">
+
+        <FORM NAME="myform" ACTION="" METHOD="GET">
+          <!-- Enter something in the box: <BR>
+          <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+         -->
+          
+            <!-- Email: <BR>
+              <INPUT TYPE="email" NAME="inputbox1" VALUE=""><P>
+                 -->
         
-        <label for="inputUsername" class="col-sm-2 col-form-label"> User name: <input type="email" id="myText" value=""></label>
+          <!-- <INPUT TYPE="button" NAME="button1" Value="Read" onClick="readText(this.form)">  -->
+          <!-- <INPUT TYPE="button" NAME="button2" Value="Write" onClick="writeText(this.form)"> -->
+          
+        
+        <label for="inputUsername" class="col-sm-2 col-form-label"> User name: <input type="email" id="inputbox" value=""></label>
        </div> 
 
        <div class="form-group row">
-        <label for="inputemail" class="col-sm-2 col-form-label"> E-mail:<input type="text" id="myEmail"value=""></label>
+        <label for="inputemail" class="col-sm-2 col-form-label"> E-mail:<input type="text" id="inputbox1"value=""></label>
       
            </div>
 
@@ -128,12 +147,15 @@
     <br>
 
     Write your message:<br>
-    <textarea id="myTextarea"> Highly welcome to our service</textarea>
+    <textarea id="myTextarea"> </textarea>
      <!-- <textarea rows="4" cols="50" name="comment" form="usrform" style="width:70%">
       Write your message </textarea> -->
        <br><br>
-   <button onclick="check(),myFunction(),myFunction2(),radio(),myText(),age()">Click here</button>
-  
+       <!-- <INPUT TYPE="button" NAME="button1" Value="Read" onClick="readText(this.form)">  -->
+       <INPUT TYPE="button" NAME="button2" Value="click" onClick="writeText(this.form)" Value="write" onClick="readText(this.form1)">
+  <!-- <button onclick="check(),myFunction(),myFunction2(),radio(),myText(),age()">Click here</button>
+     -->
+   
       
 
     </form>
